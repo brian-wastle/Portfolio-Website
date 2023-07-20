@@ -1,0 +1,40 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:0px;
+    margin:0px;
+}
+
+body {
+    background-color:#415a77;
+}
+
+header {
+    background-color:#0d1b2a;
+    height:10vh;
+    padding:0px 1vw;
+}
+
+.menu-bar {
+display:flex;
+justify-content: space-between;
+align-items:center;
+
+}
+ 
+.social-media img {
+    height:2vi;
+}
+
+.main-menu a{
+    text-decoration: none;
+    color:#778da9;
+}
+
+.bg {
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/unsplash-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
