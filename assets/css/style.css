@@ -1,11 +1,12 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding:0px;
     margin:0px;
 }
 
 body {
-    background-color:#415a77;
+    background-color:#0d1b2a;
+    color:   #e0e1dd;
 }
 
 header {
@@ -18,16 +19,17 @@ header {
 display:flex;
 justify-content: space-between;
 align-items:center;
-
 }
  
 .social-media img {
     height:2vi;
+    padding: 0px 10px;
 }
 
 .main-menu a{
     text-decoration: none;
     color:#778da9;
+    padding: 0px 20px;
 }
 
 .bg {
