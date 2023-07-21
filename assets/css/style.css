@@ -12,6 +12,8 @@ body {
 header {
     background-color:#0d1b2a;
     height:10vh;
+    min-height:50px;
+    outline:solid 0.5vh #e0e1dd;
     padding:0px 1vw;
 }
 
@@ -21,9 +23,15 @@ justify-content: space-between;
 align-items:center;
 }
  
+.social-media {
+    display:flex;
+    flex-direction:column;
+    padding-top:250px;
+}
+
 .social-media img {
-    height:2vi;
-    padding: 0px 10px;
+    height:40px;
+    padding: 10px 10px;
 }
 
 .main-menu a{
@@ -32,11 +40,29 @@ align-items:center;
     padding: 0px 20px;
 }
 
-.bg {
+.splash {
     height: 90vh;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/unsplash-bg.jpg");
+    background-image:url("../images/unsplash-bg.jpg");
     background-size: cover;
     background-position: center;
+}
+
+h2 {
+    margin:30vh 5vw 5vh 5vw;
+}
+
+main p {
+    margin:5vh 5vw 5vh 5vw;
+    
+}
+
+main section {
+    margin:5vh 5vw 80vh 5vw;
+    
+}
+
+.projects-grid {
+    display:grid;
+
 }
