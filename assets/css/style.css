@@ -10,23 +10,26 @@ body {
 }
 
 header {
+    position:fixed;
     background-color:#0d1b2a;
     height:10vh;
     min-height:50px;
     outline:solid 0.5vh #e0e1dd;
     padding:0px 1vw;
+
 }
 
 .menu-bar {
 display:flex;
 justify-content: space-between;
-align-items:center;
+align-items:center;    
+width:100vw;
 }
  
 .social-media {
     display:flex;
-    flex-direction:column;
-    padding-top:250px;
+    flex-direction:row;
+    padding-top:2vh;
 }
 
 .social-media img {
@@ -34,15 +37,22 @@ align-items:center;
     padding: 10px 10px;
 }
 
+.main-menu{
+    padding-right: 5vw;
+    display:flex;
+
+}
+
 .main-menu a{
     text-decoration: none;
     color:#778da9;
-    padding: 0px 20px;
+    margin: 0px 5px;
 }
 
 .splash {
     height: 90vh;
     width: 100%;
+    padding-top: 10vh;
     background-image:url("../images/unsplash-bg.jpg");
     background-size: cover;
     background-position: center;
@@ -68,10 +78,10 @@ main p {
 }
 
 .projects-grid {
-    margin:5vh 30vw;
     display: grid;
+    width: 100vw;
     grid-template-columns: 1fr 1fr;
-    gap: 15px 10px;
+    /* gap: 15px 10px; */
     grid-template-areas:
     "grid-item1 grid-item1"
     "grid-item2 grid-item3"
