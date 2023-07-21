@@ -48,21 +48,50 @@ align-items:center;
     background-position: center;
 }
 
-h2 {
-    margin:30vh 5vw 5vh 5vw;
+#about-me-a{
+    margin:0vh 5vw 30vh 5vw;
 }
+
+#my-work-a {
+    margin:10vh 0vw 15vh 0vw;
+}
+
+#about-me-a, #my-work-a {
+    visibility:hidden;
+}
+
+
 
 main p {
-    margin:5vh 5vw 5vh 5vw;
-    
-}
-
-main section {
-    margin:5vh 5vw 80vh 5vw;
+    margin:5vh 5vw 60vh 5vw;
     
 }
 
 .projects-grid {
-    display:grid;
-
+    margin:5vh 30vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 10px;
+    grid-template-areas:
+    "grid-item1 grid-item1"
+    "grid-item2 grid-item3"
+    "grid-item4 grid-item5";
+    justify-items: center;
 }
+
+.grid-item1 {
+  grid-area: grid-item1;
+}
+.grid-item2 {
+  grid-area: grid-item2;
+}
+.grid-item3 {
+  grid-area: grid-item3;
+}
+.grid-item4 {
+  grid-area:grid-item4;
+}
+.grid-item5 {
+  grid-area: grid-item5;
+}
+
