@@ -20,7 +20,7 @@ header {
     min-height:50px;
     outline:solid 0.5vh #e0e1dd;
     padding:0px 1vw;
-
+    z-index:999;
 }
 
 .menu-bar {
@@ -60,6 +60,7 @@ width:100vw;
     background-image:url("../images/unsplash-bg.jpg");
     background-size: cover;
     background-position: center;
+    z-index:-3;
 }
 
 .name {
@@ -78,6 +79,17 @@ width:100vw;
     position:relative;
     top:-.9lh;
     left:11vw;
+}
+
+.name img {
+    position:relative;
+    top:-3.5lh;
+    left:65%;
+    max-width: 300px;
+    width: 40vh;
+    max-height: 300px;
+    height: 40vh;
+    border-radius: 100%;
 }
 
 #about-me-a{
