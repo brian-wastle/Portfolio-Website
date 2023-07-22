@@ -48,8 +48,6 @@ header {
 .main-menu{
     display:flex;
     padding-right: 5vw;
-    
-
 } 
 
 .main-menu a{
@@ -68,27 +66,54 @@ header {
     z-index:-3;
 } 
 
-.name {
-    position:absolute;
-    margin-left:5vw;
-    bottom:10vh;
-    font-size: max(5vw, 36px);
-} 
+@media screen and (max-width: 768px) {
+    .name {
+        position:absolute;
+        bottom:40vh;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: max(5vw, 36px);
+    } 
 
- .wastle {
-    margin-left:36%;
-}  
+    .wastle {
+        /* margin-left:36%; */
+    }  
 
- .name img {
-    position:absolute;
-    bottom:10vh;
-    margin-left:60vw;
-    max-width: 300px;
-    max-height: 300px;
-    min-width: 200px;
-    min-height: 200px;
-    height: 40vh;
-    border-radius: 100%;
+    .name img {
+        position:relative;
+        max-width: 200px;
+        max-height: 200px;
+        min-width: 100px;
+        min-height: 100px;
+        height: 40vh;
+        border-radius: 100%;
+    } 
+}
+
+@media screen and (min-width: 769px) {
+    .name {
+        position:absolute;
+        margin-left:5vw;
+        bottom:10vh;
+        font-size: max(5vw, 36px);
+    } 
+
+    .wastle {
+        margin-left:36%;
+    }  
+
+    .name img {
+        position:absolute;
+        bottom:10vh;
+        margin-left:60vw;
+        max-width: 300px;
+        max-height: 300px;
+        min-width: 200px;
+        min-height: 200px;
+        height: 40vh;
+        border-radius: 100%;
+    }
 }
 
 #contact-a{
@@ -140,12 +165,24 @@ main p {
     visibility:hidden;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: 75vw;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+    gap: 10px 10px;  
+    justify-content: center;
+    margin-top:5vh;
+    margin-bottom:10vh;
+} 
 
+.projects-grid div {
+    display:flex;
+    justify-content: center;
+}
 
-
-
-
-
+.projects-grid img {
+    max-width:100%;
+}
 
 @media screen and (min-width: 992px) {
     .projects-grid {
@@ -161,7 +198,6 @@ main p {
         justify-items: center;
         margin-top:5vh;
         margin-bottom:10vh;
-
     }  
 
     .projects-grid img {
@@ -207,38 +243,7 @@ main p {
         width:100%;
         overflow:hidden;
     }
-
-
 }
-
-
-
-
-
-
-@media screen and (max-width: 992px) {
-    .projects-grid {
-        display: grid;
-        grid-template-columns: 75vw;
-        grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
-        gap: 10px 10px;  
-        justify-content: center;
-        margin-top:5vh;
-        margin-bottom:10vh;
-    } 
-
-    .projects-grid div {
-        display:flex;
-        justify-content: center;
-    }
-    .projects-grid img {
-        max-width:100%;
-    }
-}
-
-
-
-
 
 
 footer {
