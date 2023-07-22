@@ -4,6 +4,9 @@
     margin:0px;
 }
 
+
+/* @media screen and (max-width: 992px) {} */
+
 html {
     scroll-behavior: smooth
 }
@@ -137,55 +140,106 @@ main p {
     visibility:hidden;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: 48vw 48vw;
-    gap: 10px 10px;  
-    grid-template-areas:
-    "grid-item1 grid-item1"
-    "grid-item2 grid-item3"
-    "grid-item4 grid-item5";
-    justify-items: center;
-    margin-top:5vh;
-    margin-bottom:10vh;
-} 
 
- .grid-item1 {
-    display:flex;
-    grid-area: grid-item1;
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 30vw 30vw;
+        grid-template-rows: 40vh 30vh 30vh;
+        justify-content: center;
+        gap: 10px 10px;  
+        grid-template-areas:
+        "grid-item1 grid-item1"
+        "grid-item2 grid-item3"
+        "grid-item4 grid-item5";
+        justify-items: center;
+        margin-top:5vh;
+        margin-bottom:10vh;
+
+    }  
+
+    .projects-grid img {
+        width: 0;
+        height: 0;
+        min-height: 100%;
+        min-width: 100%;
+        object-fit:cover;
+    }
+
+    .grid-item1 {
+        display:block;
+        grid-area: grid-item1;
+        width:100%;
+        object-fit:fill;
+        overflow:hidden;
+    }
+
+    .grid-item2 {
+        display:block;
+        grid-area: grid-item2;
+        width:100%;
+        overflow:hidden;
+    }
+
+    .grid-item3 {
+        display:block;
+        grid-area: grid-item3;
+        width:100%;
+        overflow:hidden;
+    }
+
+    .grid-item4 {
+        display:block;
+        grid-area: grid-item4;
+        width:100%;
+        overflow:hidden;
+    } 
+
+    .grid-item5 {
+        display:block;
+        grid-area: grid-item5;
+        width:100%;
+        overflow:hidden;
+    }
+
+
 }
 
-.grid-item2 {
-    display:flex;
-    grid-area: grid-item2;
-    width: 48vw;
-    justify-content: end;
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 75vw;
+        grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr;
+        gap: 10px 10px;  
+        justify-content: center;
+        margin-top:5vh;
+        margin-bottom:10vh;
+    } 
+
+    .projects-grid div {
+        display:flex;
+        justify-content: center;
+    }
+    .projects-grid img {
+        max-width:100%;
+    }
 }
 
-.grid-item3 {
-    display:flex;
-    grid-area: grid-item3;
-    width: 48vw;
-    justify-content: start;
-}
 
-.grid-item4 {
-    display:flex;
-    grid-area:grid-item4;
-    width: 48vw;
-    justify-content: end;
-} 
 
- .grid-item5 {
-    display:flex;
-    grid-area: grid-item5;
-    width: 48vw;
-    justify-content: start;
-}
 
-.projects-grid img {
-    max-width:100%;
-}
+
 
 footer {
     text-align:center;
