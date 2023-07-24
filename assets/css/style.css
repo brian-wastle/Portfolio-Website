@@ -4,8 +4,6 @@
     margin:0px;
 }
 
-/* @media screen and (max-width: 992px) {} */
-
 html {
     scroll-behavior: smooth
 }
@@ -44,6 +42,22 @@ header {
     padding: 10px 10px;
 }
 
+@keyframes icon-shake {
+    0% {
+        transform:translateX(0px);
+    }
+
+    100% {
+        transform:translateX(5px);
+    }
+  }
+
+.social-media img:hover {
+
+    animation-fill-mode:forwards;
+    animation: icon-shake .05s linear 0s 3 alternate;
+}
+
 .main-menu{
     display:flex;
     padding-right: 5vw;
@@ -53,6 +67,10 @@ header {
     text-decoration: none;
     color:#778da9;
     margin: 0px 5px;
+}
+
+.main-menu a:hover{
+    color:#e0e1dd;
 }
 
 .splash {
@@ -74,10 +92,6 @@ header {
         transform: translate(-50%, -50%);
         font-size: max(5vw, 36px);
     } 
-
-    .wastle {
-        /* margin-left:36%; */
-    }  
 
     .name img {
         position:relative;
@@ -116,7 +130,7 @@ header {
 }
 
 #contact-a{
-    margin:20vh 5vw 30vh 5vw;
+    margin:10vh 5vw 30vh 5vw;
 }
 
 h2 {
@@ -160,9 +174,9 @@ main .about-text {
     margin:10vh 0vw 15vh 0vw;
 } 
 
-#contact-a, #about-me-a, #my-work-a {
-    visibility:hidden;
-}
+    #contact-a, #about-me-a, #my-work-a {
+        visibility:hidden;
+    }
 
 .projects-grid {
     display: grid;
@@ -182,17 +196,29 @@ main .about-text {
 
 .projects-grid img {
     max-width:100%;
+    object-fit:cover;
+    filter: grayscale(100%)
+}
+
+.projects-grid img:hover {
+    filter:none;
+}
+
+.grid-items>a:hover > .grid-photo {
+    filter:none;
 }
 
 .projects-grid p {
     position:absolute;
-    padding:10px;
-    margin-top:2vh;
-    font-weight:bolder;
-    text-transform: uppercase;
-    color:#0d1b2a;
+    padding:10px 0px;
+    margin-top:10vh;
+    width:75vw;
+    z-index:3;
     background-color: #778da9;
-     border: 2px solid #0d1b2a;
+    color:#0d1b2a;
+    font-weight:bolder;
+    text-align:center;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 992px) {
@@ -206,22 +232,21 @@ main .about-text {
         "grid-item1 grid-item1"
         "grid-item2 grid-item3"
         "grid-item4 grid-item5";
-        justify-items: center;
+        /* justify-items: center; */
         margin-top:5vh;
         margin-bottom:10vh;
     }  
 
     .projects-grid img {
-        width: 0;
-        height: 0;
         min-height: 100%;
         min-width: 100%;
         object-fit:cover;
     }
 
+
     .projects-grid p {
         padding: 0px;
-        width:50%;
+        width:100%;
         text-align: center;
     }
 
