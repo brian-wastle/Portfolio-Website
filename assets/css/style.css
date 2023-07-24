@@ -77,14 +77,6 @@ header {
     display:none;
 }
 
-
-
-
-
-
-
-
-
 @media screen and (max-width: 768px) {
     .main-menu a, .main-menu p{
         display:none;
@@ -118,12 +110,6 @@ header {
         display: block;
     }
 }
-
-
-
-
-
-
 
 .splash {
     height: 90vh;
