@@ -106,8 +106,12 @@ header {
         text-align:right;
     }
     
-    .main-menu:hover .drop-menu {
+    .main-menu:active .drop-menu, .main-menu:hover .drop-menu {
         display: block;
+    }
+
+    .main-menu::not(:active) .drop-menu, .main-menu:not(:hover) .drop-menu {
+        display: none;
     }
 }
 
