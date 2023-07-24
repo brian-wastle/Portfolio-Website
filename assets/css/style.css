@@ -110,7 +110,7 @@ header {
         display: block;
     }
 
-    .main-menu::not(:active) .drop-menu, .main-menu:not(:hover) .drop-menu {
+    .main-menu::not(:active) .drop-menu, .main-menu:not(:hover) .drop-menu, .main-menu:not(:focus) .drop-menu {
         display: none;
     }
 }
