@@ -73,6 +73,58 @@ header {
     color:#e0e1dd;
 }
 
+.main-menu img, .main-menu .drop-menu{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .main-menu a, .main-menu p{
+        display:none;
+    }
+
+    .main-menu img{
+        display:block;
+        height:40px;
+    padding: 10px 10px;
+    }
+
+    .drop-menu {
+        display: none;
+        position: absolute;
+        right:20px;
+        top:10vh;
+        background-color: #e0e1dd;
+        min-width: 100px;
+        z-index: 3;
+      }
+
+    .drop-menu a {
+        color: #0d1b2a;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align:right;
+    }
+    
+    .main-menu:hover .drop-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
 .splash {
     height: 90vh;
     width: 100%;
@@ -232,7 +284,6 @@ main .about-text {
         "grid-item1 grid-item1"
         "grid-item2 grid-item3"
         "grid-item4 grid-item5";
-        /* justify-items: center; */
         margin-top:5vh;
         margin-bottom:10vh;
     }  
