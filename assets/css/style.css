@@ -4,6 +4,7 @@
     margin:0px;
 }
 
+/* controls scrolling when using the navigation bar */
 html {
     scroll-behavior: smooth
 }
@@ -13,6 +14,7 @@ body {
     color:   #e0e1dd;
 } 
 
+/* this will stay visible at the top of the page as the user scrolls */
 header {
     position:fixed;
     padding:0px 1vw;
@@ -31,6 +33,7 @@ header {
     
 }
  
+/* social media icons on left of nav bar */
 .social-media {
     display:flex;
     flex-direction:row;
@@ -58,6 +61,7 @@ header {
     animation: icon-shake .05s linear 0s 3 alternate;
 }
 
+/* navigation icons/drop down menu on right of nav bar */
 .main-menu{
     display:flex;
     padding-right: 5vw;
@@ -77,6 +81,7 @@ header {
     display:none;
 }
 
+/* changes nagivation links to dropdown menu on small screens */
 @media screen and (max-width: 768px) {
     .main-menu a, .main-menu p{
         display:none;
@@ -115,6 +120,7 @@ header {
     }
 }
 
+/* main bg image */
 .splash {
     height: 90vh;
     width: 100%;
@@ -125,6 +131,7 @@ header {
     z-index:-3;
 } 
 
+/* controls placement of name and profile pic depending on screen size */
 @media screen and (max-width: 768px) {
     .name {
         position:absolute;
@@ -171,6 +178,7 @@ header {
     }
 }
 
+/* contact section */
 #contact-a{
     margin:10vh 5vw 30vh 5vw;
 }
@@ -199,6 +207,8 @@ h3 {
     padding-top: 25px;
 }
 
+/* about me section */
+
 #about-me-a{
     margin:10vh 5vw 30vh 5vw;
 }
@@ -212,14 +222,17 @@ main .about-text {
     margin:5vh 5vw 40vh 5vw;
 }
 
+/* my work section */
+
 #my-work-a {
     margin:10vh 0vw 15vh 0vw;
 } 
 
-    #contact-a, #about-me-a, #my-work-a {
-        visibility:hidden;
-    }
+#contact-a, #about-me-a, #my-work-a {
+    visibility:hidden;
+}
 
+/* sets up grid for links to previous work */
 .projects-grid {
     display: grid;
     position:relative;
@@ -242,6 +255,8 @@ main .about-text {
     filter: grayscale(100%)
 }
 
+/* turns images from black & white to color on mouse hover */
+
 .projects-grid img:hover {
     filter:none;
 }
@@ -262,6 +277,8 @@ main .about-text {
     text-align:center;
     text-transform: uppercase;
 }
+
+/* changes grid when viewed on small screens */
 
 @media screen and (min-width: 992px) {
     .projects-grid {
